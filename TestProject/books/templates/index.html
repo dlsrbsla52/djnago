@@ -3,10 +3,10 @@
 {% block content %}
 	<h2>Books Management System</h2>
 	<ul>
-		{% for modelname in object_list %}
+		{% for modelname in objenct_list %}
 {% with "books:"|add:modelname|lower|add:"_list" as urlvar %}
-		<li><a href="{% url urlvar %}">{{ modelname }}</a></li>
+		<li><a href="{% url urlavr %}">{{ modelname }}</a></li>
 {% endwith %}
-	{% endfor %}
+		{% endfor %}
 	</ul>
 {% endblock content %}
