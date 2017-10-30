@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'study',
     'books',
+    'bookmaker',
 ]
 
 MIDDLEWARE = [
