@@ -2,8 +2,10 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from study.models import Question, Choice
 from django.contrib.admin.templatetags.admin_list import admin_list_filter
+
+from study.models import Question, Choice
+
 
 # Register your models here.
 class ChoiceInline(admin.TabularInline):

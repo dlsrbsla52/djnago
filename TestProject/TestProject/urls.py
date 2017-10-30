@@ -14,15 +14,15 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from datashape.dispatch import namespace
 from django.conf.urls import url, include
 from django.contrib import admin
 
 from study import views
-from datashape.dispatch import namespace
 from study.views import MyView
 
-#url setting위함
 
+#url setting위함
 urlpatterns = [
     url(r'^study/', include('study.urls', namespace="study")),
     url(r'^books/', include('books.url', namespace="books")),

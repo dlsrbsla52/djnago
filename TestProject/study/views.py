@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render, get_object_or_404
-
-from study.models import Question, Choice
-from django.http.response import HttpResponseRedirect
-from django.urls.base import reverse
 from Explorer.Standard_Suite import selected_text
+
+from anaconda_navigator.utils.py3compat import request
 from django import forms
 from django.http import HttpResponse
+from django.http.response import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404
+from django.urls.base import reverse
 from django.views.generic import View
-from anaconda_navigator.utils.py3compat import request
+
+from study.models import Question, Choice
+
+
 # from study.foms import NameForm
-    
-    
     ###현제 에러가 안나게 만든 class
 class MyView(View):
     def get(self, request):

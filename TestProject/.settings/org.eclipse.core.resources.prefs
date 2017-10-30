@@ -4,6 +4,7 @@ encoding//books/admin.py=utf-8
 encoding//books/apps.py=utf-8
 encoding//books/migrations/0001_initial.py=utf-8
 encoding//books/models.py=utf-8
+encoding//books/tests.py=utf-8
 encoding//books/views.py=utf-8
 encoding//study/admin.py=utf-8
 encoding//study/apps.py=utf-8

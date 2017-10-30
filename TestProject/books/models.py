@@ -30,4 +30,9 @@ class Publisher(models.Model):
     
     def __unicode__(self):  # __str__ on python 3
         return self.name
-
+    
+    
+class poster(models.Model):
+    base_sige = models.IntegerField(max_length=10)
+    coloer = models.CharField(max_length=100)
+    

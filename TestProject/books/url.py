@@ -1,5 +1,13 @@
+'''
+Created on 2017. 9. 20.
+
+@author: hwang-ingyu
+'''
+
 from django.conf.urls import url
+
 from books import views
+
 
 urlpatterns = [             
                 url(r'^$', views.BooksModelView.as_view(), name='index'),
@@ -13,4 +21,3 @@ urlpatterns = [
                 url(r'^publisher/(?P<pk>\d+)$', views.PublisherDetail.as_view(), name = 'publisher_detail'),
                 
                 ]
-
